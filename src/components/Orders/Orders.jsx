@@ -43,7 +43,6 @@ const Orders = () => {
 
     return (
         <div className={css.container}>
-            {/* Net Profit Section */}
             <div className={css.netProfit}>
                 <div className={css.amountContainer}>
                     <span className={css.amount}>${netProfit.toFixed(2)}</span>
@@ -76,8 +75,6 @@ const Orders = () => {
                     </svg>
                 </div>
             </div>
-
-            {/* Options Section */}
             <div className={css.options}>
                 <div className={css.option}>
                     <ImTarget size={30} color="lightgreen"/>
@@ -95,8 +92,6 @@ const Orders = () => {
                     <TiArrowRight className={css.arrow} />
                 </div>
             </div>
-
-            {/* Customer Feedback Section */}
             <div className={css.feedback}>
                 <h2>Customer's Feedback</h2>
                 {customerFeedback.map((feedback, index) => (

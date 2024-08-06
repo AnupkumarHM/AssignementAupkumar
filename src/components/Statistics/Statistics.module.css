@@ -1,4 +1,4 @@
-/* General Container */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -11,7 +11,6 @@
     font-weight: 500;
 }
 
-/* Cards Section */
 .cards {
     display: flex;
     justify-content: space-between;
@@ -40,7 +39,6 @@
     font-weight: 500;
 }
 
-/* Arrow Icon */
 .arrowIcon {
     width: 2rem;
     height: 2rem;
@@ -54,7 +52,7 @@
     color: black;
 }
 
-/* Recent Orders Section */
+
 
 .orderHeaders {
     display: flex;
@@ -80,23 +78,23 @@
 }
 
 .recentOrdersContainer {
-    margin: 1; /* Reset margin if needed */
-    padding: 1; /* Reset padding if needed */
+    margin: 1;
+    padding: 1;
     background-color: var(--dark-grey);
     border-radius: 8px;
-    padding: 0.2rem; /* Adjust padding as needed */
+    padding: 0.2rem; 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
     max-height: 90vh;
     display: flex;
-    flex-direction: column; /* Ensure proper alignment of child elements */
-    gap: 0.2rem; /* Reset gap if needed */
+    flex-direction: column; 
+    gap: 0.2rem;
 }
 
 .recentOrders {
     color: rgb(243, 243, 243);
-    margin: 0; /* Remove margin to start from the top of the container */
-    padding: 0; /* Remove padding if it’s pushing content down */
+    margin: 0;
+    padding: 0;
 }
 
 .recentOrdersTitle {

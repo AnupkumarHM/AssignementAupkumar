@@ -9,7 +9,6 @@ const RecentOrders = () => {
         { id: 4, customer: 'Kristin Watson', amount: 65.00, status: 'Pending', img: 'https://img.freepik.com/premium-photo/black-american-female-humanoid-robot-cyborg_63106-1089.jpg?w=2000' },
         { id: 5, customer: 'Cody Fisher', amount: 545.00, status: 'Delivered', img: 'https://img.freepik.com/premium-photo/black-american-female-humanoid-robot-cyborg_63106-1089.jpg?w=2000' }
     ];
-
     return (
         <div className={`${css.container} theme-container`}>
             <div className={css.recentOrdersTitle}>Recent Orders</div>

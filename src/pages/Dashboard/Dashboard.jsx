@@ -14,7 +14,6 @@ const Dashboard = () => {
     <>
       <div className={css.container}>
         <div className={css.leftContainer}>
-          {/* Dashboard Section */}
           <div className={css.dashboard}>
             <div className={css.head}>
               <span>Dashboard</span>
@@ -46,12 +45,12 @@ const Dashboard = () => {
                       <div className={css.cardChange}>
                         {card.change >= 0 ? (
                           <>
-                            <TiArrowSortedUp size={20} color="green" /> {/* Up arrow for positive change */}
+                            <TiArrowSortedUp size={20} color="green" /> 
                             <span>{card.change}</span>
                           </>
                         ) : (
                           <>
-                            <TiArrowSortedUp size={20} color="red" style={{ transform: 'rotate(180deg)' }} /> {/* Down arrow for negative change */}
+                            <TiArrowSortedUp size={20} color="red" style={{ transform: 'rotate(180deg)' }} /> 
                             <span>{card.change}</span>
                           </>
                         )}
@@ -62,7 +61,6 @@ const Dashboard = () => {
               ))}
             </div>
           </div>
-          {/* Statistics Section */}
           <div className={css.statisticsContainer}>
             <Statistics />
           </div>
@@ -70,9 +68,6 @@ const Dashboard = () => {
             <RecentOrders />
           </div>
         </div>
-        
-        {/* Orders Section */}
-        
           <Orders />
         
       </div>
