@@ -38,17 +38,23 @@ This project is a React-based dashboard application showcasing various component
 
 ### Setup
 
+## Setup
+
 1. **Clone the Repository**
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/your-repository.git
+   ```bash
+   git clone https://github.com/AnupkumarHM/AssignementAupkumar.git
 
-# Navigate into the project directory
-cd your-repository
+2. **Navigate to the Project Directory**
 
-# Install dependencies
-npm install
+   ```bash
+   AssignementAupkumar
+1. **Install Dependencies**
 
-# Start the development server
-npm start
+   ```bash
+   npm install
+1. **Run the Development Server**
+
+   ```bash
+    npm run dev
+
