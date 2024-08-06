@@ -58,3 +58,4 @@ This project is a React-based dashboard application showcasing various component
    ```bash
     npm run dev
 
+![UI Screenshot](./Screenshot2024-08-06%20185705.png)
