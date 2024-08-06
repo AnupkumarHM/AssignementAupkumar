@@ -12,19 +12,19 @@ This project is a React-based dashboard application showcasing various component
 - **Orders Management**: Section dedicated to viewing and managing orders.
 
 ## Libraries and Tools
+
 - **React**: A JavaScript library for building user interfaces.
 - **Vite**: A build tool for fast development and optimized builds.
 - **React Icons**: A library of popular icons as React components.
-  - **`react-icons/ti`**: Includes icons like TiArrowSortedUp, TiArrowSortedDown, TiArrowRight.
-  - **`react-icons/fa`**: Includes icons like FaShoppingBasket, FaFunnelDollar.
-  - **`react-icons/md`**: Includes icons like MdOutlineShoppingBag, MdSpaceDashboard.
-  - **`react-icons/bs`**: Includes icons like BsArrowUpShort, BsBagCheck.
-  - **`react-icons/ci`**: Includes icons like CiBurger.
-  - **`react-icons/im`**: Includes icons like ImTarget.
-  - **`react-icons/cg`**: Includes icons like CgCap.
-  - **`react-icons/ai`**: Includes icons like AiFillCalendar, AiOutlineTable, AiFillHome, AiOutlineShoppingCart, AiOutlineLineChart.
-  - **`react-icons/fa`**: Includes icons like FaTasks, FaWallet.
-  - **`react-icons/hi`**: Includes icons like HiOutlineChartSquareBar.
+  - **`react-icons/ti`**: Icons like `TiArrowSortedUp`, `TiArrowSortedDown`, `TiArrowRight`.
+  - **`react-icons/fa`**: Icons like `FaShoppingBasket`, `FaFunnelDollar`.
+  - **`react-icons/md`**: Icons like `MdOutlineShoppingBag`, `MdSpaceDashboard`.
+  - **`react-icons/bs`**: Icons like `BsArrowUpShort`, `BsBagCheck`.
+  - **`react-icons/ci`**: Icons like `CiBurger`.
+  - **`react-icons/im`**: Icons like `ImTarget`.
+  - **`react-icons/cg`**: Icons like `CgCap`.
+  - **`react-icons/ai`**: Icons like `AiFillCalendar`, `AiOutlineTable`, `AiFillHome`, `AiOutlineShoppingCart`, `AiOutlineLineChart`.
+  - **`react-icons/hi`**: Icons like `HiOutlineChartSquareBar`.
 - **ECharts**: A powerful charting library.
   - **`echarts-for-react`**: A React wrapper for ECharts, enabling integration of ECharts with React components.
   - **`echarts`**: The core charting library used for creating interactive charts and visualizations.
@@ -42,3 +42,11 @@ This project is a React-based dashboard application showcasing various component
 
    ```bash
    git clone https://github.com/AnupkumarHM/AssignementAupkumar.git
+   cd AssignementAupkumar
+   npm install
+   npm run dev
+   npm run build
+   npm run preview
+   npm run lint
+
+
