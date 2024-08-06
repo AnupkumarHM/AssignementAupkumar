@@ -40,13 +40,15 @@ This project is a React-based dashboard application showcasing various component
 
 1. **Clone the Repository**
 
-   ```bash
-   git clone https://github.com/AnupkumarHM/AssignementAupkumar.git
-   cd AssignementAupkumar
-   npm install
-   npm run dev
-   npm run build
-   npm run preview
-   npm run lint
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/your-repository.git
 
+# Navigate into the project directory
+cd your-repository
 
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
