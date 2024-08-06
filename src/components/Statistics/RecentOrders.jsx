@@ -24,6 +24,7 @@ const RecentOrders = () => {
 
 
                     {orders.map(order => (
+                        
                         <div key={order.id} className={css.orderCard}>
                             <div className={css.customer}>
                                 <img src={order.img} alt={order.customer} />

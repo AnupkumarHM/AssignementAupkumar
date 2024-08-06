@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-    height: 70%;
+    height: 100%;
 }
 
 .title {
@@ -56,7 +56,6 @@
 
 /* Recent Orders Section */
 
-
 .orderHeaders {
     display: flex;
     justify-content: space-between;
@@ -67,8 +66,9 @@
 
 .orderHeaders,
 .orderCard {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 0.2rem;
     border-bottom: 0.5px solid #7a7272;
     padding: 0.5rem 0;
@@ -97,16 +97,17 @@
     color: rgb(243, 243, 243);
     margin: 0; /* Remove margin to start from the top of the container */
     padding: 0; /* Remove padding if it’s pushing content down */
-  }
- .recentOrdersTitle {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-} 
+}
+
+.recentOrdersTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 
 .orderCard {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -169,11 +170,21 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .orderCard {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
     }
 
     .orderCard > div {
-        margin-bottom: 0.5rem;
+        flex: 1;
+        text-align: center;
+    }
+
+    .customer {
+        flex-direction: column;
+        align-items: center;
     }
 
     .customer img {
