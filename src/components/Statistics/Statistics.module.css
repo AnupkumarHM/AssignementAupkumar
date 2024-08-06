@@ -1,0 +1,218 @@
+/* General Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    height: 70%;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards > :nth-child(1) {
+    align-items: center;
+    display: flex;
+    gap: 0.8rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    color: var(--grey);
+    gap: 0.5rem;
+}
+
+.card > :nth-child(1) {
+    font-size: 0.8rem;
+}
+
+.card > :nth-child(2) {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Arrow Icon */
+.arrowIcon {
+    width: 2rem;
+    height: 2rem;
+    background: var(--orange);
+    border-radius: 5px;
+}
+
+.arrowIcon > svg {
+    width: 2rem;
+    height: 2rem;
+    color: black;
+}
+
+/* Recent Orders Section */
+
+
+.orderHeaders {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    border-bottom: 0.5px solid #7a7272;
+}
+
+.orderHeaders,
+.orderCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.2rem;
+    border-bottom: 0.5px solid #7a7272;
+    padding: 0.5rem 0;
+}
+
+.orderHeaders {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.recentOrdersContainer {
+    margin: 1; /* Reset margin if needed */
+    padding: 1; /* Reset padding if needed */
+    background-color: var(--dark-grey);
+    border-radius: 8px;
+    padding: 0.2rem; /* Adjust padding as needed */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column; /* Ensure proper alignment of child elements */
+    gap: 0.2rem; /* Reset gap if needed */
+}
+
+.recentOrders {
+    color: rgb(243, 243, 243);
+    margin: 0; /* Remove margin to start from the top of the container */
+    padding: 0; /* Remove padding if it’s pushing content down */
+  }
+ .recentOrdersTitle {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+} 
+
+.orderCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--dark-grey);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.orderCard:hover {
+    background-color: var(--light-grey);
+    transform: scale(1.02);
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.customer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.status {
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    color: var(--white);
+    display: inline-block;
+}
+
+.status-delivered {
+    background-color: var(--green);
+}
+
+.status-pending {
+    background-color: var(--orange);
+}
+
+.status-cancelled {
+    background-color: var(--red);
+}
+
+.durationButton {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.durationButton > select {
+    border: none;
+    background: var(--orange-gradient);
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .orderCard {
+        grid-template-columns: 1fr;
+    }
+
+    .orderCard > div {
+        margin-bottom: 0.5rem;
+    }
+
+    .customer img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 0.8rem;
+    }
+
+    .cards > :nth-child(1) {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .recentOrdersTitle {
+        font-size: 0.8rem;
+    }
+
+    .orderTable th,
+    .orderTable td {
+        padding: 0.3rem;
+        font-size: 0.8rem;
+    }
+
+    .customer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .customer img {
+        width: 1rem;
+        height: 1rem;
+    }
+}

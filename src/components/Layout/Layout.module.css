@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    height: 100vh; /* Ensure full viewport height */
+    overflow: hidden; /* Hide overflow for the container itself */
+    background-color: #4e4c4c;
+  }
+  
+  .dashboard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .topBaseGradients {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20rem;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .topBaseGradients > :nth-child(2) {
+    left: 40%;
+  }
+  
+  .topBaseGradients > :nth-child(3) {
+    right: 0;
+  }
+  
+  .header {
+    display: flex;
+    padding: 1rem 1rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2); /* Add background color if needed */
+  }
+  .searchBar {
+    background-color: rgba(255, 255, 255, 0.2); /* Lower alpha value for more transparency */
+    width: 30%;
+    max-width: 25rem;
+    padding: 1rem;
+    border-radius: 8px;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(63, 63, 63, 0.5); /* Optional: make the border slightly transparent */
+    justify-content: center;
+    gap: 2px;
+  }
+  .buttonsContainer {
+    display: flex; /* Arrange buttons in a row */
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Center buttons horizontally */
+  }
+  
+  .iconButton {
+    background-color: transparent; /* Background color of the button */
+    color: #ffffff; /* Icon color */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Optional: rounded corners */
+    padding: 10px; /* Padding inside the button */
+    display: flex; /* Center icon inside button */
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .iconButton:hover {
+    background-color:transparent;
+  }
+  
+  .searchBar > input {
+    background: transparent;
+    color: black; /* Change to black for visibility */
+    outline: none;
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
+  .profileImage {
+    width: 47px; /* Adjust the size to match the icons */
+    height: 47px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .profile {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile > img {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .details > :nth-child(1) {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .content {
+    flex: 1; /* Allow the content area to take up remaining space */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    margin-top: 0.2rem; /* Adjust as needed */
+  }
+  
+  .content > div {
+    width: 100%;
+    min-width: 75vh;
+  }
+  

@@ -1,0 +1,288 @@
+.container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 4rem;
+  gap: 2rem;
+  padding-top: 40px; /* Adjust this value as needed */
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.head > img {
+  width: 2rem;
+}
+.stat {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: var(--grey);
+}
+.stat > :nth-child(1) {
+  font-size: 0.8rem;
+}
+.stat > :nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.orders {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ gap: 1.5rem;
+}
+.order>div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: var(--grey);
+    font-size: 0.85rem;
+}
+
+.order>:nth-child(1)
+{
+    margin-bottom: 0.8rem;
+}
+.order>:nth-child(1)>:nth-child(1)
+{
+    font-size: 1rem;
+}
+.order>:nth-child(1)>:nth-child(2)
+{
+    font-size: 0.8rem;
+    color: var(--green);
+}
+.orderChart{
+    width: 100%;
+}
+.orderChart>:nth-child(1)
+{
+    text-align: center;
+}
+
+.container {
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+.netProfit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #333333;
+}
+
+.amount {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.completion {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.progressCircle {
+  width: 100%;
+  height: 100%;
+}
+
+.circleBg {
+  fill: none;
+  stroke: #444444;
+  stroke-width: 4.8;
+}
+
+.circle {
+  fill: none;
+  stroke: #6c6ef0;
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.3s ease;
+}
+.changeText {
+  display: flex;
+  align-items: left;
+  color: rgb(10, 238, 10);
+  margin-top: 5px;
+
+}
+.amountContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.amount {
+  font-size: 24px;
+  font-weight: bold;
+}
+.change {
+  display: flex;
+  align-items: left;
+  color: rgb(10, 238, 10);
+  margin-top: 20px; 
+}
+.percentage {
+  fill: #ffffff;
+  font-size: 10px;
+  text-anchor: middle;
+
+}
+
+.change {
+  color: green;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  border-bottom: 1px solid #333333;
+}
+
+.option {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.option:hover {
+  background-color: #333333;
+}
+
+.feedback {
+  padding: 20px 0;
+}
+
+.feedback h2 {
+  margin-bottom: 20px;
+}
+
+.feedbackItem {
+  border: 1px solid #444444;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.feedbackItem:hover {
+  background-color: #333333;
+}
+
+.feedbackHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedbackName {
+  font-weight: bold;
+}
+
+.feedbackRating {
+  color: gold;
+}
+.star {
+  font-size: 16px; /* Adjust size as needed */
+  color: gold;
+}
+
+.halfStar {
+  position: relative;
+  display: inline-block;
+}
+
+.halfStar:before {
+  content: '★';
+  color: gold;
+  position: absolute;
+  left: 0;
+}
+
+.halfStar:after {
+  content: '★';
+  color: #ddd; /* Color for the unfilled part */
+  position: absolute;
+  left: 0;
+  width: 50%; /* Adjust based on the fraction */
+  overflow: hidden;
+}
+.feedbackText {
+  margin-top: 10px;
+}
+.feedbackItem {
+  border: 1px solid #444444;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.feedbackImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover; /* This ensures the image covers the area nicely */
+}
+
+.feedbackContent {
+  flex: 1;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  border-bottom: 1px solid #333333;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  margin-bottom: 10px; /* Space between each option */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #333333;
+}
+
+.optionImage {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  margin-right: 10px;
+  border-radius: 50%; /* Optional: to make image round */
+  object-fit: cover; /* Ensure image covers the area */
+}
+
+.optionText {
+  flex: 1;
+}
+
+.arrow {
+  margin-left: 10px;
+}
